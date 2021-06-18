@@ -10,11 +10,11 @@
 <body>
     <h1>Greet me</h1>
 
-    <form action="/hello" method="post" >
+    <form action="/hello" method="post" >Please enter your name:
         <input type="text" name="username">
-{{!--         <input type="submit" Greet> <br> --}}
-
-
+                    <div>
+                  <h1> {{counter}} <h1>
+                   </div>
         <br>
         <br>
             <label class="">
@@ -38,16 +38,15 @@
             </div>
             <br>
 
-        <div>
-            <ul>
-                {{#each users}}
-                <li>{{this}}</li>
-                {{/each}}
-             </ul>
-        </div>
-
-
     </form>
+
+    <div>
+    <a href="/greeted">
+     <button class="button-primary" type="submit" name="button">Greeted</button>
+     </a>
+    </div>
+
+   <br>
 
     {{greeting}}
 
